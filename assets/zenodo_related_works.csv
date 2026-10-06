@@ -1,0 +1,118 @@
+relation,identifier,scheme,resource_type,bibkey,title
+Cites,arXiv:2602.00134,arXiv,publication-preprint,Tsiokos2026Foundations,Six Birds: Foundations of Emergence Calculus
+Cites,10.32388/A6LBSO,DOI,publication-preprint,Tsiokos2026FoundationsII,"Six Birds Foundations II: Admissibility, Meta-Theory, and the Exact-Six Program"
+Cites,10.5281/zenodo.20124595,DOI,publication-preprint,Tsiokos2026FoundationsIII,Six Birds Foundations III: A Finite Audited Interaction Calculus for SBT
+Cites,10.5281/zenodo.18838994,DOI,publication-preprint,Tsiokos2026PICA,To Create a Stone with Six Birds: Emergent Geometric and Thermodynamic Regimes from a Minimal Stochastic Substrate
+Cites,10.5281/zenodo.19201835,DOI,publication-preprint,Tsiokos2026Godel,"Six Birds for Incompleteness: Fixed Packages, Package Change, and Conditional Arithmetic Lift"
+Cites,10.5281/zenodo.19187777,DOI,publication-preprint,Tsiokos2026NoGo,Six Birds: No-Go Theorems for Audited Emergence
+Cites,10.5281/zenodo.19061345,DOI,publication-preprint,Tsiokos2026Confluence,"To Flatten a Stone with Six Birds: Critical Pairs, Holonomy, and Confluence in Rewriting Systems"
+Cites,10.5281/zenodo.18906902,DOI,publication-preprint,Tsiokos2026ProtocolTrap,Six Birds Protocol Trap: Holonomy Without Entropy Production
+Cites,10.5281/zenodo.18494975,DOI,publication-preprint,Tsiokos2026PlotStone,To Plot a Stone with Six Birds: Constructing and Auditing Emergent Geometry from Markov Dynamics
+Cites,10.1017/CBO9781139172752,DOI,publication-book,BaaderNipkow1998,Term Rewriting and All That
+Cites,10.1090/coll/025,DOI,publication-book,Birkhoff1967Lattice,Lattice Theory
+Cites,10.1007/BFb0081279,DOI,publication-book,Bowen1975Equilibrium,Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms
+Cites,10.2307/3215235,DOI,publication-article,Buchholz1994Lumpability,Exact and ordinary lumpability in finite Markov chains
+Cites,10.1145/512950.512973,DOI,publication-conferencepaper,CousotCousot1977,Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints
+Cites,10.1145/567752.567778,DOI,publication-conferencepaper,CousotCousot1979,Systematic Design of Program Analysis Frameworks
+Cites,10.1002/047174882X,DOI,publication-book,CoverThomas2006,Elements of Information Theory
+Cites,10.1017/CBO9780511809088,DOI,publication-book,DaveyPriestley2002,Introduction to Lattices and Order
+Cites,10.1007/BF01647093,DOI,publication-article,DaviesLewis1970,An Operational Approach to Quantum Probability
+Cites,10.1007/978-3-030-79876-5_37,DOI,publication-conferencepaper,deMouraUllrich2021Lean4,The Lean 4 Theorem Prover and Programming Language
+Cites,10.1007/978-3-662-53622-3,DOI,publication-book,Diestel2017GraphTheory,Graph Theory
+Cites,https://ncatlab.org/nlab/files/Ehresmann-CategoriesDoubles.pdf,URL,publication-article,Ehresmann1963Doubles,Catégories doubles et catégories structurées
+Cites,10.2307/2964649,DOI,publication-article,Feferman1962Progressions,Transfinite Recursive Progressions of Axiomatic Theories
+Cites,10.1145/333979.333989,DOI,publication-article,GiacobazziRanzatoScozzari2000,Making Abstract Interpretations Complete
+Cites,10.1007/BF01700692,DOI,publication-article,Goedel1931Incompleteness,Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I
+Cites,https://www.numdam.org/item/CTGDC_1999__40_3_162_0/,URL,publication-article,GrandisPare1999,Limits in Double Categories
+Cites,arXiv:quant-ph/0101012,arXiv,publication-preprint,Hardy2001Axioms,Quantum Theory from Five Reasonable Axioms
+Cites,9780521795401,ISBN,publication-book,Hatcher2002AT,Algebraic Topology
+Cites,9780387901923,ISBN,publication-book,KemenySnell1976,Finite Markov Chains
+Cites,10.1017/CBO9780511626302,DOI,publication-book,LindMarcus1995Symbolic,An Introduction to Symbolic Dynamics and Coding
+Cites,10.1007/978-1-4757-4721-8,DOI,publication-book,MacLane1998Categories,Categories for the Working Mathematician
+Cites,10.1007/978-1-4612-0927-0,DOI,publication-book,MacLaneMoerdijk1992Sheaves,Sheaves in Geometry and Logic: A First Introduction to Topos Theory
+Cites,10.1145/3372885.3373824,DOI,publication-conferencepaper,Mathlib2020,The Lean Mathematical Library
+Cites,10.2307/1968867,DOI,publication-article,Newman1942,"On Theories with a Combinatorial Definition of ""Equivalence"""
+Cites,10.2307/1990305,DOI,publication-article,Ore1944Galois,Galois Connexions
+Cites,10.1016/0021-8693(90)90229-H,DOI,publication-article,Power1990Pasting,A 2-categorical Pasting Theorem
+Cites,9780201135046,ISBN,publication-book,Ruelle1978Thermo,Thermodynamic Formalism: The Mathematical Structures of Classical Equilibrium Statistical Mechanics
+Cites,10.70930/tac/2m83wy59,DOI,publication-article,Shulman2008Framed,Framed Bicategories and Monoidal Fibrations
+Cites,https://philpapers.org/rec/TARDWI,URL,publication-article,Tarski1936Truth,Der Wahrheitsbegriff in den formalisierten Sprachen
+Cites,10.1007/978-1-4612-5775-2,DOI,publication-book,Walters1982Ergodic,An Introduction to Ergodic Theory
+Cites,10.1017/CBO9780511624162,DOI,publication-book,Abrial1996BBook,The B-Book: Assigning Programs to Meanings
+Cites,10.1090/mmono/191,DOI,publication-book,AmariNagaoka2000,Methods of Information Geometry
+Cites,https://apps.dtic.mil/sti/citations/AD0770768,URL,publication-report,BellLaPadula1973Security,Secure Computer Systems: Mathematical Foundations
+Cites,10.1070/RM2005v060n02ABEH000823,DOI,publication-article,Beklemishev2005Reflection,Reflection Principles and Provability Algebras in Formal Arithmetic
+Cites,10.1007/978-3-540-34514-5,DOI,publication-book,Bogachev2007MeasureI,"Measure Theory, Volume I"
+Cites,10.1017/CBO9780511525858,DOI,publication-book,Borceux1994Handbook1,"Handbook of Categorical Algebra, Volume 1: Basic Category Theory"
+Cites,10.1007/978-1-4757-3951-0,DOI,publication-book,BottTu1982,Differential Forms in Algebraic Topology
+Cites,9780201006346,ISBN,publication-book,Bourbaki1968TheoryOfSets,Elements of Mathematics: Theory of Sets
+Cites,10.1007/978-1-4612-0647-7,DOI,publication-book,Bredon1997Sheaves,Sheaf Theory
+Cites,10.1007/3-540-44503-X_20,DOI,publication-conferencepaper,BunemanKhannaTan2001Provenance,Why and Where: A Characterization of Data Provenance
+Cites,10.1214/aoms/1177706444,DOI,publication-article,BurkeRosenblatt1958Markovian,A Markovian Function of a Markov Chain
+Cites,10.1515/9783112720875,DOI,publication-book,BurmeisterPartial,"A Model Theoretic Oriented Approach to Partial Algebras: Introduction to Theory and Application of Partial Algebras, Part I"
+Cites,10.1007/978-3-540-37205-9,DOI,publication-book,BuschLahtiMittelstaedt1996,The Quantum Theory of Measurement
+Cites,10.1145/6041.6042,DOI,publication-article,CardelliWegner1985,"On Understanding Types, Data Abstraction, and Polymorphism"
+Cites,10.1561/1900000006,DOI,publication-article,CheneyChiticariuTan2009,"Provenance in Databases: Why, How, and Where"
+Cites,10.1090/cbms/092,DOI,publication-book,Chung1997Spectral,Spectral Graph Theory
+Cites,10.1090/S0002-9947-1936-1501858-0,DOI,publication-article,ChurchRosser1936,Some Properties of Conversion
+Cites,10.1007/10722167_15,DOI,publication-conferencepaper,ClarkeGrumbergJhaLuVeith2000CEGAR,Counterexample-Guided Abstraction Refinement
+Cites,10.1016/0890-5401(88)90005-3,DOI,publication-article,CoquandHuet1988,The Calculus of Constructions
+Cites,10.1093/logcom/2.4.511,DOI,publication-article,CousotCousot1992Frameworks,Abstract Interpretation Frameworks
+Cites,10.1007/3-540-55844-6_142,DOI,publication-conferencepaper,CousotCousot1992PLILP,Comparing the Galois Connection and Widening/Narrowing Approaches to Abstract Interpretation
+Cites,10.1214/aop/1176996454,DOI,publication-article,Csiszar1975IProjection,I-Divergence Geometry of Probability Distributions and Minimization Problems
+Cites,10.1145/1376616.1376772,DOI,publication-conferencepaper,DavidsonFreire2008,Provenance and Scientific Workflows: Challenges and Opportunities
+Cites,10.1007/978-3-7643-8708-2,DOI,publication-book,Diaconescu2008Institutions,Institution-independent Model Theory
+Cites,10.1007/978-3-642-69962-7,DOI,publication-book,EhrigMahr1985AlgebraicSpec,Fundamentals of Algebraic Specification 1: Equations and Initial Semantics
+Cites,10.1515/9781400877492,DOI,publication-book,EilenbergSteenrod1952,Foundations of Algebraic Topology
+Cites,10.4064/fm-49-1-35-92,DOI,publication-article,Feferman1960Arithmetization,Arithmetization of Metamathematics in a General Setting
+Cites,10.70930/tac/8cw8rvm2,DOI,publication-article,Fong2015Decorated,Decorated Cospans
+Cites,10.1145/113445.113468,DOI,publication-conferencepaper,FreemanPfenning1991,Refinement Types for ML
+Cites,https://cir.nii.ac.jp/crid/1371132818656952328,URL,publication-article,Friedman1976Subsystems,"Systems of Second Order Arithmetic with Restricted Induction I,II"
+Cites,10.1145/800055.802051,DOI,publication-conferencepaper,FriedmanWand1984Reification,Reification: Reflection without Metaphysics
+Cites,https://books.google.com/books/about/Topologie_alg%C3%A9brique_et_th%C3%A9orie_des_fa.html?id=JVrvAAAAMAAJ,URL,publication-book,Godement1958Sheaves,Topologie algébrique et théorie des faisceaux
+Cites,10.1145/147508.147524,DOI,publication-article,GoguenBurstall1992Institutions,Institutions: Abstract Model Theory for Specification and Programming
+Cites,https://www.ams.org/notices/200811/tx081101382p.pdf,URL,publication-article,GonthierFCT2008,Formal Proof-The Four-Color Theorem
+Cites,10.1007/3-540-56287-7_95,DOI,publication-conferencepaper,Granger1992,Improving the Results of Static Analyses of Programs by Local Decreasing Iterations
+Cites,https://www.numdam.org/article/SB_1958-1960__5__299_0.pdf,URL,publication-article,Grothendieck1959Descent,Technique de descente et théorèmes d'existence en géométrie algébrique. I. Généralités. Descente par morphismes fidèlement plats
+Cites,10.1017/fmp.2017.1,DOI,publication-article,HalesFormalKepler2017,A Formal Proof of the Kepler Conjecture
+Cites,10.1016/B978-0-12-348250-1.X5001-3,DOI,publication-book,Hill1977,Free Energy Transduction in Biology
+Cites,9780134587615,ISBN,publication-book,HoareHe1998UTP,Unifying Theories of Programming
+Cites,0444863338,ISBN,publication-book,Holevo1982Probabilistic,Probabilistic and Statistical Aspects of Quantum Theory
+Cites,https://homotopytypetheory.org/book,URL,publication-book,HoTT2013,Homotopy Type Theory: Univalent Foundations of Mathematics
+Cites,10.1017/CBO9781107359987,DOI,publication-book,Keller1998Equilibrium,Equilibrium States in Ergodic Theory
+Cites,10.1007/978-3-642-58822-8,DOI,publication-book,Kitchens1998Symbolic,"Symbolic Dynamics: One-sided, Two-sided and Countable State Markov Shifts"
+Cites,https://cir.nii.ac.jp/crid/1570009751126836992,URL,publication-section,KnuthBendix1970,Simple Word Problems in Universal Algebras
+Cites,https://katalog.bibliothek.kit.edu/bib/499897,URL,publication-book,KobayashiNomizu1963,"Foundations of Differential Geometry, Volume I"
+Cites,10.2307/2024634,DOI,publication-article,Kripke1975Truth,Outline of a Theory of Truth
+Cites,0691034362,ISBN,publication-book,Kurshan1994Verification,Computer-Aided Verification of Coordinating Processes
+Cites,10.1017/CBO9781139171472,DOI,publication-book,Lakatos1976ProofsRefutations,Proofs and Refutations: The Logic of Mathematical Discovery
+Cites,10.1007/978-3-7091-9170-5,DOI,publication-book,LaprieCoppersmith1992Dependability,Dependability: Basic Concepts and Terminology
+Cites,10.2307/2266895,DOI,publication-article,Lob1955,Solution of a Problem of Leon Henkin
+Cites,10.1007/978-3-642-86751-4,DOI,publication-book,Ludwig1983Foundations,Foundations of Quantum Mechanics I
+Cites,10.1006/inco.1995.1134,DOI,publication-article,LynchVaandrager1995ForwardBackward,Forward and Backward Simulations: I. Untimed Systems
+Cites,https://search.worldcat.org/title/537248,URL,publication-book,Mackey1963QM,The Mathematical Foundations of Quantum Mechanics
+Cites,9788870881059,ISBN,publication-book,MartinLof1984,Intuitionistic Type Theory
+Cites,10.1007/3-540-10235-3,DOI,publication-book,Milner1980CCS,A Calculus of Communicating Systems
+Cites,9780131150072,ISBN,publication-book,Milner1989Concurrency,Communication and Concurrency
+Cites,10.1090/coll/002/01,DOI,publication-section,Moore1910,Introduction to a Form of General Analysis
+Cites,https://www.w3.org/TR/prov-dm/,URL,publication-report,MoreauMissier2013PROV,PROV-DM: The PROV Data Model
+Cites,https://www.cs.ox.ac.uk/publications/books/PfS/,URL,publication-book,Morgan1994Programming,Programming from Specifications
+Cites,9780198538141,ISBN,publication-book,NordstromPeterssonSmith1990,Programming in Martin-Löf's Type Theory: An Introduction
+Cites,10.1063/1.526000,DOI,publication-article,Ozawa1984,Quantum Measuring Processes of Continuous Observables
+Cites,10.1007/BFb0017309,DOI,publication-section,Park1981Concurrency,Concurrency and Automata on Infinite Sequences
+Cites,10.1007/3-540-06859-7_148,DOI,publication-section,Reynolds1974AbstractTypes,Towards a Theory of Type Structure
+Cites,10.1145/1375581.1375602,DOI,publication-conferencepaper,RondonKawaguchiJhala2008Liquid,Liquid Types
+Cites,10.1017/CBO9780511777110,DOI,publication-book,Sangiorgi2011Bisimulation,Introduction to Bisimulation and Coinduction
+Cites,10.1103/RevModPhys.48.571,DOI,publication-article,Schnakenberg1976,Network Theory of Microscopic and Macroscopic Behavior of Master Equation Systems
+Cites,https://www.usenix.org/legacy/publications/library/proceedings/sec98/full_papers/schneier/schneier.pdf,URL,publication-conferencepaper,SchneierKelsey1998SecureLogs,Cryptographic Support for Secure Logs on Untrusted Machines
+Cites,10.1007/BFb0058656,DOI,publication-book,SGA1,Revêtements étales et groupe fondamental (SGA 1)
+Cites,10.1023/A:1010388907793,DOI,publication-article,ShaliziCrutchfield2001CompMech,"Computational Mechanics: Pattern and Prediction, Structure and Simplicity"
+Cites,0201070286,ISBN,publication-book,Shoenfield1967ML,Mathematical Logic
+Cites,10.1145/800017.800513,DOI,publication-conferencepaper,Smith1984Reflection,Reflection and Semantics in Lisp
+Cites,9780139785290,ISBN,publication-book,Spivey1992Z,The Z Notation: A Reference Manual
+Cites,10.1017/CBO9781139058520,DOI,publication-book,Stanley2011EC1,"Enumerative Combinatorics, Volume 1"
+Cites,10.2140/pjm.1955.5.285,DOI,publication-article,Tarski1955FixedPoint,A Lattice-Theoretical Fixpoint Theorem and Its Applications
+Cites,arXiv:physics/0004057,arXiv,publication-preprint,TishbyPereiraBialek1999IB,The Information Bottleneck Method
+Cites,10.1145/319838.319871,DOI,publication-conferencepaper,WandFriedman1986Tower,The Mystery of the Tower Revealed: A Non-Reflective Description of the Reflective Tower
+Cites,10.1090/S0002-9947-1932-1501641-2,DOI,publication-article,Whitney1932Planar,Non-separable and Planar Graphs
+Cites,10.1007/11542384,DOI,publication-book,Wiedijk2006Provers,The Seventeen Provers of the World

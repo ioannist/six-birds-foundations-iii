@@ -1,0 +1,166 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+% lualatex: use fontspec to swap the monospace face for one with broad Unicode
+% coverage in Lean-related code blocks. Roman and sans serif faces remain Latin Modern,
+% matching the carrier-to-event paper's overall look.
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{fontspec}
+  \setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
+\fi
+
+\input{includes/foundations_iii_macros.tex}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newenvironment{claimtheorem}[1]{\par\medskip\noindent\textbf{#1.}\itshape}{\par\medskip}
+\newenvironment{claimproposition}[1]{\par\medskip\noindent\textbf{#1.}\itshape}{\par\medskip}
+\newenvironment{claimdefinition}[1]{\par\medskip\noindent\textbf{#1.}}{\par\medskip}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{4em}
+\tolerance=2000
+\hbadness=2000
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad DOI: \href{https://doi.org/10.5281/zenodo.23096391}{10.5281/zenodo.23096391} \quad \textcopyright\ 2026 \quad CC-BY 4.0}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{Six Birds Foundations III:\\
+A Finite Audited Interaction Calculus for SBT}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{Version 2: October 2, 2026\\[2pt] \footnotesize (Version 1: May 11, 2026)}
+\hypersetup{
+  pdftitle={Six Birds Foundations III: A Finite Audited Interaction Calculus for SBT},
+  pdfauthor={Ioannis Tsiokos},
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!45!black
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+In Six Birds theory (SBT), Foundations I and II fixed six roles that a layer of description uses to close over what it tracks: descent, representability, route mismatch, refinement, packaging and audit ($P_1,\ldots,P_6$). This paper asks how the roles act on one another. It builds $\BirdInt$, a finite calculus in which an admissible interaction, one role acting on another, is a typed cell, classified under an explicit instrument from its records and measured defects. The calculus works with finite records; when numerical fields have decidable equality and order and every threshold-evaluated defect is computable in its declared type, its admissibility and classification judgments are finite checks.
+
+The main results are as follows. No total algebra on the six roles recovers the status of a cell. An interaction may have distinct acting and informing roles. Five non-implications separate the verdicts of different judgment families: evidence that one role is active does not make an interaction cell active; an active cell does not make the corresponding unordered pair observable, which needs its own source record, count as real; and a strict promotion to a new layer implies neither an active cell, nor acceptance, one level higher, of the claim that a lower instrument's recorded verdicts are correct, nor acceptance of an instrument's soundness claim about itself. The last is never accepted, because the classifier's circularity rule applies to any soundness claim that cites a verdict at its own level (Theorem 24). Every well-formed cell receives exactly one status. Descent through a quotient, idempotent completion, strict extension of a theory and cycles on a finite graph have exact counterparts in the calculus, with their hypotheses made explicit. Further results say when promoting a construction to a new layer is sound, when a claim reads more than its instrument can see, and how an instrument at a higher level audits a stack of at most two lower instruments without certifying itself. Twelve countermodels mark what the calculus does not deliver. Four scoped model realizations exhibit fragments of the calculus on concrete hosts: abstract interpretation, graph cohomology, an audited class of states of a Cantor system, and record stores of the shape used by PICA (the Primitive Interaction Closure Algebra of a finite Markov chain). Each realization holds for records that meet a stated admissibility condition. For PICA we show that the condition can be met over every nonempty finite Markov chain, whatever raw interaction statuses are prescribed; the construction uses the chain only to check which finite trajectories have positive probability, and we do not check the condition on the records of the existing PICA simulator. Appendix F lists, result by result, what the accompanying Lean 4 artifact proves. The paper does not claim a universal exact-six theorem (that every description decomposes into exactly the six roles), a universal algebra of the six roles, a unique decomposition, an empirical realization, or complete self-certification at a single level.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.} finite typed calculus; audited interaction; emergence calculus; status semantics; defect calculus; theory packages; promotion bridge; model realization; rotating audit; nonfactorization.
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\clearpage
+
+\input{sections/01-introduction}
+\input{sections/02-preliminaries-and-scope}
+\input{sections/03-finite-audited-domain}
+\input{sections/04-central-object-birdint}
+\input{sections/05-status-and-defect-semantics}
+\input{sections/06-core-finite-interaction-theorems}
+\input{sections/07-descent-packaging-completion-strictness}
+\input{sections/08-graph-cohomology-drive-module}
+\input{sections/09-countermodel-atlas}
+\input{sections/10-promotion-and-stacking}
+\input{sections/11-instruments-visibility-rotating-audit}
+\input{sections/12-abstract-interpretation-model-family}
+\input{sections/13-model-realizations}
+\input{sections/14-secondary-high-structure-semantics}
+\input{sections/16-limitations-nonclaims-future-work}
+\input{sections/17-conclusion}
+
+\appendix
+\input{sections/A-appendix-full-definitions}
+\input{sections/B-appendix-long-proofs}
+\input{sections/C-appendix-full-countermodel-atlas}
+\input{sections/D-appendix-model-realization-sheets}
+\input{sections/E-appendix-high-structure-semantics}
+\input{sections/F-appendix-mechanization-probe}
+\input{sections/G-appendix-dependency-graph}
+\input{sections/H-appendix-deferred-and-dropped-claims}
+\input{sections/I-appendix-claim-strengths-and-indexed-forms}
+\input{sections/J-appendix-version-history}
+
+\clearpage
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

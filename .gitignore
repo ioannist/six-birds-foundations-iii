@@ -1,0 +1,69 @@
+node_modules/
+package.json
+package-lock.json
+paper/foundations_iii.md
+paper/.codex_thread_id
+.codex
+paper/build/
+# pandoc-generated LaTeX from markdown sources; rebuilt by scripts/build_paper.sh.
+paper/sections/*.tex
+.lake/
+lean/full/.lake/
+lean/.validate-logs/
+lean-validation.json
+lean-full-validation.json
+/thread/
+anti_loc/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local drafting corpus, agent drafting guides and checklists (kept on disk)
+/papers/
+/paper/academic_writing_guidance_prompt.md
+/paper/detailed_outline.md
+/paper/notation_and_terminology.md
+/RELEASE_CHECKLIST_*.md
+/PLAN_*.md
+
+# Editor / OS noise
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+.pytest_cache/
+
+# Local secrets and credentials (keep only an explicit example file)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.pypirc
+credentials*.json
+*secret*
+*token*.txt
+
+# Local agent, prompt, transcript and session state (any depth)
+**/.agents/
+**/.codex/
+**/.claude/
+**/.cursor/
+**/.aider*
+**/.continue/
+**/.specstory/
+**/.windsurf/
+**/.codex_thread_id*
+/memory/
+/prompts/
+/skills/
+**/transcripts/
+**/rollout-*.jsonl
+**/*.transcript*
+**/CLAUDE.local.md
+**/.claude.json

@@ -1,0 +1,11 @@
+$out_dir = 'build';
+$aux_dir = 'build';
+
+# Use lualatex for native UTF-8 support (Unicode chars appear in pseudo-Lean
+# code blocks in the mechanization appendix). The carrier-to-event pipeline
+# uses pdflatex; we mirror its structure (out_dir / aux_dir / latexpand) and
+# differ only in the compile engine. Output is still PDF.
+$pdf_mode = 4;  # 4 == lualatex
+
+# After successful build, flatten .tex into a single file in build/
+$success_cmd = 'latexpand %S -o %Y/%R_flat.tex';

@@ -1,0 +1,22 @@
+% Shared manuscript macros for Foundations III.
+% Project-specific commands used across sections live here.
+
+% Convenience: the central object name.
+\providecommand{\BirdInt}{\mathbf{BirdInt}^{\mathrm{aud}}_{\mathrm{fin}}}
+
+% \not\factor relation used in factorization/strict-extension statements.
+% Markdown source uses \not\factor; provide it as a LaTeX macro so
+% pandoc-converted source compiles without further substitution.
+\providecommand{\factor}{\mathrel{\sqsubseteq}}
+
+% Drive face notation used in graph/cohomology fragments.
+\providecommand{\Pdrive}{\mathrm{P6}_{\mathrm{drive}}}
+\providecommand{\PdriveH}[1]{\mathrm{P6}_{\mathrm{drive}}^{#1}}
+
+% --- Pandoc helpers ---
+% pandoc emits \tightlist after compact list items; treat as a no-op.
+\providecommand{\tightlist}{}
+% pandoc emits \pandocbounded around figures in some flavors.
+\providecommand{\pandocbounded}[1]{#1}
+% Used by pandoc's longtable output.
+\providecommand{\real}[1]{#1}

@@ -1,0 +1,109 @@
+name: Lean validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  lean-validation:
+    name: Lean full validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install validation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl ripgrep
+
+      - name: Install Lean toolchain
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.elan/bin:$PATH"
+          toolchain="$(cat lean/full/lean-toolchain)"
+          elan toolchain install "$toolchain"
+
+      - name: Build Lean project
+        run: |
+          cd lean/full
+          lake build
+
+      - name: Run strict Lean validator
+        run: |
+          ./scripts/validate_lean.sh --tier full --require-full --json lean-full-validation.json
+
+      - name: Upload Lean validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-full-validation
+          path: lean-full-validation.json
+          if-no-files-found: ignore
+
+  paper-build:
+    name: Paper build and prose consistency
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install paper dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            latexmk \
+            pandoc \
+            ripgrep \
+            texlive-bibtex-extra \
+            texlive-extra-utils \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-luatex \
+            texlive-pictures
+
+      - name: Build paper
+        run: make paper-build
+
+      - name: Check flattened release source is current
+        run: |
+          cmp -s \
+            paper/build/main_flat.tex \
+            Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex
+
+      - name: Scan for stale mechanization prose
+        run: |
+          pattern="does not assert.*machine-checked|No actual proof-assistant|pseudo-formal|pseudo-proofs|mechanization-as-future-work|strict validation should fail|Phase 1 establishes infrastructure only|future work.*machine-checked|Mechanization Probe|mechanization-readiness"
+          stale="$(
+            rg -n "$pattern" \
+              paper/sections \
+              lean/README.md \
+              README.md \
+              paper/main.tex \
+              paper/build/main_flat.tex \
+              Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex \
+              || true
+          )"
+          stale="$(printf '%s\n' "$stale" | rg -v 'paper/main\.tex:.*15-mechanization-readiness' || true)"
+          if [[ -n "$stale" ]]; then
+            printf '%s\n' "$stale"
+            exit 1
+          fi
+
+      - name: Upload paper artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-build
+          path: |
+            paper/build/main.pdf
+            paper/build/main_flat.tex
+          if-no-files-found: ignore

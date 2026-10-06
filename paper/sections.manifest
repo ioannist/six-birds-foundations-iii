@@ -1,0 +1,31 @@
+# Build manifest for foundations_iii.md
+# One file per line, in final document order.
+# Lines starting with # and blank lines are ignored.
+
+00-front-matter.md
+01-introduction.md
+02-preliminaries-and-scope.md
+03-finite-audited-domain.md
+04-central-object-birdint.md
+05-status-and-defect-semantics.md
+06-core-finite-interaction-theorems.md
+07-descent-packaging-completion-strictness.md
+08-graph-cohomology-drive-module.md
+09-countermodel-atlas.md
+10-promotion-and-stacking.md
+11-instruments-visibility-rotating-audit.md
+12-abstract-interpretation-model-family.md
+13-model-realizations.md
+14-secondary-high-structure-semantics.md
+16-limitations-nonclaims-future-work.md
+17-conclusion.md
+A-appendix-full-definitions.md
+B-appendix-long-proofs.md
+C-appendix-full-countermodel-atlas.md
+D-appendix-model-realization-sheets.md
+E-appendix-high-structure-semantics.md
+F-appendix-mechanization-probe.md
+G-appendix-dependency-graph.md
+H-appendix-deferred-and-dropped-claims.md
+I-appendix-claim-strengths-and-indexed-forms.md
+J-appendix-version-history.md
